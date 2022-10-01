@@ -1,10 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Experience } from "../typings";
+import { urlFor } from "../sanity";
 
-type Props = {};
+type Props = {
+  experience: Experience;
+};
 
-function ExperienceCard({}: Props) {
+function ExperienceCard({ experience }: Props) {
   return (
     <article
       className="flex snap-center bg-[#292929] p-10 flex-col rounded-lg items-center space-y-7 flex-shrink-0
@@ -20,30 +24,35 @@ function ExperienceCard({}: Props) {
         }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
-        src="https://th.bing.com/th/id/OIP.VsvOr2Q2d_Ixr1aUDFGmIQHaHC?pid=ImgDet&rs=1"
+        src={urlFor(experience?.companyImage).url()}
         alt="card"
       />
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">CEO of Reactology</h4>
         <p className="font-bold text-2xl mt-1">Reactology</p>
         <div className="flex space-x-2 my-2">
-          <Image
-            width={50}
-            height={50}
-            src="https://th.bing.com/th/id/OIP.VsvOr2Q2d_Ixr1aUDFGmIQHaHC?pid=ImgDet&rs=1"
-            className="rounded-full"
-            alt=""
-          />
+          {experience.technologies?.map((technology) => (
+            <img
+              key={technology._id}
+              src={urlFor(technology.image).url()}
+              alt=""
+            />
+          ))}
         </div>
         <p className="uppercase text-gray-300 py-5">
-          Started work ... ~ Ended ...
+          {new Date(experience.dateStarted).toDateString()} ~{" "}
+          {experience.isCurrentlyWorking
+            ? "Present"
+            : new Date(experience.dateEnded).toDateString()}
         </p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
+        <ul
+          className="list-disc space-y-4 ml-5 text-lg max-h-96  pr-5
+        scrollbar-thin scrollbar-track-black scollbar-thumb-[#f7ab0a]/80
+        overflow-y-scroll"
+        >
+          {experience.points?.map((point, index) => (
+            <li key={index}>{point}</li>
+          ))}
         </ul>
       </div>
     </article>

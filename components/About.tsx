@@ -1,9 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { PageInfo } from "../typings";
+import { urlFor } from "../sanity";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-function About({}: Props) {
+function About({ pageInfo }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -25,7 +29,7 @@ function About({}: Props) {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
-        src="https://th.bing.com/th/id/OIP.VsvOr2Q2d_Ixr1aUDFGmIQHaHC?pid=ImgDet&rs=1"
+        src={urlFor(pageInfo?.profilePic).url()}
         alt="Profile"
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
         md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
@@ -36,12 +40,7 @@ function About({}: Props) {
           <span className="underline decoration-[#f7ab0a]">little</span>{" "}
           background
         </h4>
-        <p className="text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          quibusdam modi saepe, dolore necessitatibus illo doloribus id nostrum
-          quam, fugit nam aspernatur suscipit, temporibus quae. Odit et rem
-          fugit cupiditate.
-        </p>
+        <p className="text-base">{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>
   );
