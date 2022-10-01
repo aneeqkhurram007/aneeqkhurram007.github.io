@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
+import ContactMe from "../components/ContactMe";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -10,8 +11,8 @@ import Skills from "../components/Skills";
 const Home: NextPage = () => {
   return (
     <div
-      className="bg-main snap-y snap-mandatory overflow-scroll
-    z-0 text-white h-screen"
+      className="bg-main snap-y snap-mandatory overflow-y-scroll overflow-x-hidden
+    z-0 text-white h-screen scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"
     >
       <Head>
         <title>Aneeq Khurram</title>
@@ -43,7 +44,10 @@ const Home: NextPage = () => {
       <section id="projects" className="snap-start">
         <Projects />
       </section>
-      {/* Contact Me */}
+
+      <section id="contact" className="snap-start">
+        <ContactMe />
+      </section>
     </div>
   );
 };
