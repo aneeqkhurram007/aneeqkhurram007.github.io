@@ -12,7 +12,7 @@ function ExperienceCard({ experience }: Props) {
   return (
     <article
       className="flex snap-center bg-[#292929] p-10 flex-col rounded-lg items-center space-y-7 flex-shrink-0
-    w-[500px] md:w-[600px] xl:w-[900px] cursor-pointer hover:opacity-100 opacity-40 
+    w-[500px] md:w-[600px] xl:w-[900px] cursor-pointer hover:opacity-100 opacity-40
     transition-opacity duration-200 overflow-hidden"
     >
       <motion.img
@@ -28,14 +28,15 @@ function ExperienceCard({ experience }: Props) {
         alt="card"
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">CEO of Reactology</h4>
-        <p className="font-bold text-2xl mt-1">Reactology</p>
+        <h4 className="text-4xl font-light">{experience.company}</h4>
+        <p className="font-bold text-2xl mt-1">{experience.jobTitle}</p>
         <div className="flex space-x-2 my-2">
           {experience.technologies?.map((technology) => (
             <img
               key={technology._id}
               src={urlFor(technology.image).url()}
               alt=""
+              className="h-10 w-10 rounded-full"
             />
           ))}
         </div>
