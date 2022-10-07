@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Project } from "../typings";
 import { urlFor } from "../sanity";
+import Link from "next/link";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 type Props = {
   projects: Project[];
@@ -10,27 +12,27 @@ type Props = {
 function Projects({ projects }: Props) {
   return (
     <motion.div
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row
-      items-center z-0 max-w-full justify-evenly mx-auto"
+      className="min-h-screen relative flex overflow-hidden flex-col xl:flex-row pt-20 xl:pt-0
+      items-center z-0 max-w-full text-center justify-center xl:justify-between mx-auto xl:px-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
       <h3
-        className="absolute top-24 uppercase tracking-[20px]
+        className=" uppercase tracking-[20px]
       text-gray-500 text-2xl"
       >
         Projects
       </h3>
       <div
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory
-       z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#f7ab0a]/80"
+        z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#f7ab0a]/80"
       >
         {projects?.map((project, index) => (
           <div
             key={project._id}
-            className="w-screen flex-shrink-0 snap-center 
-          flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
+            className="w-screen flex-shrink-0 snap-center
+            flex flex-col space-y-5 items-center justify-center p-2 sm:p-20 md:p-44 h-screen"
           >
             <motion.img
               initial={{ y: -300, opacity: 0 }}
@@ -39,10 +41,11 @@ function Projects({ projects }: Props) {
               viewport={{ once: true }}
               src={urlFor(project.image).url()}
               alt={project?.title}
+              className="h-64"
             />
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
+              <h4 className="text-2xl xl:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#f7ab0a]">
                   Case Study {index + 1} of {projects?.length}: {project.title}
                 </span>
@@ -59,13 +62,19 @@ function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <p className="text-lg text-center md:text-left">
-                {project?.summary}
-              </p>
+              <Link href={"#"} className="">
+                <div className="text-lg flex justify-center text-center md:text-2xl cursor-pointer hover:text-[#f7ab0a]">
+                  <p>{project?.title}</p>
+                  <div>
+                    <ArrowUpRightIcon className="h-4 w-4" />
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         ))}
       </div>
+
       <div
         className="w-full absolute top-[30%] bg-[#f7ab0a]/10 left-0
       h-[500px] -skew-y-12"

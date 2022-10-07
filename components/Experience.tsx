@@ -14,7 +14,7 @@ function Experience({ experiences }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="min-h-screen flex relative overflow-hidden flex-col text-left
-    xl:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
+    xl:flex-row max-w-full xl:px-20 justify-evenly xl:justify-between mx-auto items-center"
     >
       <h3
         className=" uppercase tracking-[20px]

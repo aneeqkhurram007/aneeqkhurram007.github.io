@@ -24,7 +24,7 @@ const ContactMe = (props: Props) => {
   return (
     <div
       className="min-h-screen flex relative flex-col text-center md:text-left xl:flex-row
-    max-w-7xl px-10 justify-center sm:justify-evenly mx-auto items-center space-y-10"
+    max-w-7xl px-10 justify-center sm:justify-evenly xl:justify-between mx-auto items-center space-y-10"
     >
       <h3
         className="uppercase tracking-[20px]
@@ -32,13 +32,13 @@ const ContactMe = (props: Props) => {
       >
         Contact
       </h3>
-      <div className="flex px-4 flex-col space-y-4 sm:space-y-10">
+      <div className="flex px-4 flex-col space-y-4 sm:space-y-5">
         <h4 className="text-2xl sm:text-4xl font-semibold text-center">
           I have got just what you need.{" "}
           <span className="decoration-[#f7ab0a]/50 underline">Lets talk.</span>
         </h4>
 
-        <div className="space-y-4 sm:space-y-10">
+        <div className="space-y-4 sm:space-y-5">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
             <p className="text-lg sm:text-2xl">+92-306-4730660</p>

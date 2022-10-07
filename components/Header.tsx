@@ -32,7 +32,7 @@ const headerVariants = {
 function Header({ socials }: Props) {
   return (
     <header
-      className="sticky top-0 flex items-start 
+      className="sticky top-0 flex items-start
     justify-between max-w-7xl mx-auto z-20 xl:items-center p-5"
     >
       <motion.div
@@ -45,7 +45,7 @@ function Header({ socials }: Props) {
           <SocialIcon
             key={social._id}
             url={social.url}
-            fgColor="gray"
+            fgColor="#f7ab0a"
             bgColor="transparent"
           />
         ))}
@@ -60,10 +60,10 @@ function Header({ socials }: Props) {
           <SocialIcon
             className="cursor-pointer"
             network="email"
-            fgColor="gray"
+            fgColor="#f7ab0a"
             bgColor="transparent"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          <p className="uppercase hidden md:inline-flex text-sm text-[#f7ab0a]">
             Get in touch
           </p>
         </motion.div>

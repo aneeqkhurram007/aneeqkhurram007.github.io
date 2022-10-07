@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import { urlFor } from "../sanity";
 import {
   Experience as ExperienceType,
   PageInfo,
@@ -74,7 +75,7 @@ const Home = ({ pageInfo, projects, socials, experiences, skills }: Props) => {
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <img
-              src="https://i.imgur.com/e2yvD6A.png"
+              src={urlFor(pageInfo.heroImage)?.url()}
               alt="footer"
               className="h-10 w-10 cursor-pointer rounded-full filter grayscale hover:grayscale-0"
             />
