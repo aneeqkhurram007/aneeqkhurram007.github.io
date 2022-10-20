@@ -18,7 +18,7 @@ const ContactMe = (props: Props) => {
     formState: { errors },
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:aneeqkhurram007@yahoo.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}, ${formData.message} (${formData.email})`;
+    window.location.href = `mailto:admin@aneeqkhurram007.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}, ${formData.message} (${formData.email})`;
   };
 
   return (
@@ -45,7 +45,7 @@ const ContactMe = (props: Props) => {
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <p className="text-lg sm:text-2xl">aneeqkhurram007@yahoo.com</p>
+            <p className="text-lg sm:text-2xl">admin@aneeqkhurram007.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />

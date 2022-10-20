@@ -31,7 +31,7 @@ function Projects({ projects }: Props) {
         {projects?.map((project, index) => (
           <div
             key={project._id}
-            className="w-screen flex-shrink-0 snap-center
+            className="w-screen  flex-shrink-0 snap-center
             flex flex-col space-y-5 items-center justify-center p-2 sm:p-20 md:p-44 h-screen"
           >
             <motion.img
@@ -61,15 +61,18 @@ function Projects({ projects }: Props) {
                   />
                 ))}
               </div>
-
-              <Link href={"#"} className="">
-                <div className="text-lg flex justify-center text-center md:text-2xl cursor-pointer hover:text-[#f7ab0a]">
-                  <p>{project?.title}</p>
-                  <div>
-                    <ArrowUpRightIcon className="h-4 w-4" />
-                  </div>
-                </div>
-              </Link>
+              <p className="">
+                <span
+                  className="inline-flex text-lg w-fit
+                   md:text-xl cursor-pointer hover:text-[#f7ab0a]"
+                >
+                  <Link href={project?.linkToBuild || ""} passHref>
+                    <a target={"_blank"}>{project?.title}</a>
+                  </Link>
+                  <ArrowUpRightIcon className="h-4 w-4" />
+                </span>
+                <span className="inline">{project?.summary}</span>
+              </p>
             </div>
           </div>
         ))}

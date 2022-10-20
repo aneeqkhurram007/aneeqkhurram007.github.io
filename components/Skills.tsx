@@ -14,7 +14,7 @@ function Skills({ skills }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="flex relative flex-col text-center md:text-left
-    xl:flex-row max-w-[2000px] justify-start pt-20 space-y-10 sm:justify-evenly sm:space-y-0 sm:h-screen xl:justify-between px-20
+    xl:flex-row max-w-[2000px] justify-start pt-20 space-y-40 sm:justify-evenly sm:space-y-0 h-screen xl:justify-between px-20
     xl:space-y-0 xl:space-x-5 mx-auto items-center"
     >
       <div>
