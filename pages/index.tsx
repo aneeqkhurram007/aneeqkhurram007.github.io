@@ -1,5 +1,5 @@
 import type { GetStaticProps } from "next";
-import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
@@ -32,57 +32,51 @@ type Props = {
 
 const Home = ({ pageInfo, projects, socials, experiences, skills }: Props) => {
   return (
-    <div
-      className="bg-main snap-y snap-mandatory overflow-y-scroll overflow-x-hidden
+    <>
+      <div
+        className="bg-main snap-y snap-mandatory overflow-y-scroll overflow-x-hidden
     z-0 text-white h-screen scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"
-    >
-      <Head>
-        <title>Aneeq Khurram</title>
-        <meta
-          name="description"
-          content="Aneeq Khurram's portfolio @aneeqkhurram007"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      >
+        <Header socials={socials} />
+        <section id="hero" className="snap-start">
+          <Hero pageInfo={pageInfo} />
+        </section>
 
-      <Header socials={socials} />
+        <section id="about" className="snap-center">
+          <About pageInfo={pageInfo} />
+        </section>
 
-      <section id="hero" className="snap-start">
-        <Hero pageInfo={pageInfo} />
-      </section>
+        <section id="experience" className="snap-center">
+          <Experience experiences={experiences} />
+        </section>
 
-      <section id="about" className="snap-center">
-        <About pageInfo={pageInfo} />
-      </section>
+        <section id="skills" className="snap-start">
+          <Skills skills={skills} />
+        </section>
 
-      <section id="experience" className="snap-center">
-        <Experience experiences={experiences} />
-      </section>
+        <section id="projects" className="snap-start">
+          <Projects projects={projects} />
+        </section>
 
-      <section id="skills" className="snap-start">
-        <Skills skills={skills} />
-      </section>
+        <section id="contact" className="snap-start">
+          <ContactMe />
+        </section>
 
-      <section id="projects" className="snap-start">
-        <Projects projects={projects} />
-      </section>
-
-      <section id="contact" className="snap-start">
-        <ContactMe />
-      </section>
-
-      <Link href={"#hero"}>
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex items-center justify-center">
-            <img
-              src={urlFor(pageInfo.heroImage)?.url()}
-              alt="footer"
-              className="h-10 w-10 cursor-pointer rounded-full filter grayscale hover:grayscale-0"
-            />
-          </div>
-        </footer>
-      </Link>
-    </div>
+        <Link href={"#hero"}>
+          <footer className="sticky bottom-5 w-full cursor-pointer">
+            <div className="flex items-center justify-center">
+              <Image
+                height={40}
+                width={40}
+                src={urlFor(pageInfo.heroImage)?.url()}
+                alt="footer"
+                className="h-10 w-10 cursor-pointer rounded-full filter grayscale hover:grayscale-0"
+              />
+            </div>
+          </footer>
+        </Link>
+      </div>
+    </>
   );
 };
 

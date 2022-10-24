@@ -9,6 +9,54 @@
     "lint": "next lint",
     "sanity": "cd sanity && yarn start"
   },
+  "author": {
+    "email": "admin@aneeqkhurram007.com",
+    "name": "Aneeq Khurram",
+    "url": "https://aneeqkhurram007.com"
+  },
+  "keywords": [
+    "Aneeq Khurram",
+    "aneeqkhurram007",
+    "fiverr",
+    "upwork",
+    "reactjs",
+    "nextjs",
+    "frontend",
+    "web development"
+  ],
+  "contributors": [
+    {
+      "name": "Aneeq Khurram",
+      "email": "aneeqkhurram007@yahoo.com",
+      "url": "https://github.com/aneeqkhurram007"
+    },
+    {
+      "name": "Aneeq Khurram",
+      "email": "admin@aneeqkhurram007.com",
+      "url": "https://aneeqkhurram007.com"
+    }
+  ],
+  "categories": [
+    "Programming Languages",
+    "Education",
+    "Machine Learning",
+    "Themes"
+  ],
+  "description": "Aneeq Khurram's web development portfolio. Aneeq Khurram is a professional front-end developer having experience of more than 2 years in React, Next, Tailwind CSS, Mongo DB, Node JS, Express JS, Micro-services, GraphQL, Material UI, AWS, Google Cloud, Digital Ocean, and Firebase. ",
+  "displayName": "Aneeq Khurram",
+  "readme": "Readme.md",
+  "repository": {
+    "type": "git",
+    "directory": "portfolio",
+    "url": "https://github.com/aneeqkhurram007/portfolio"
+  },
+  "sponsor": {
+    "url": "https://aneeqkhurram007.com"
+  },
+  "homepage": "index.html",
+  "packageManager": "yarn, yarnpkg",
+  "publisher": "Aneeq Khurram",
+  "license": "MIT",
   "dependencies": {
     "@heroicons/react": "^2.0.11",
     "@portabletext/react": "^1.0.6",
@@ -16,6 +64,7 @@
     "framer-motion": "^7.3.6",
     "next": "12.3.1",
     "next-sanity": "^0.8.4",
+    "next-seo": "^5.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.36.1",
@@ -33,5 +82,12 @@
     "tailwind-scrollbar": "^2.0.1",
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.3"
-  }
+  },
+  "maintainers": [
+    {
+      "name": "Aneeq Khurram",
+      "email": "admin@aneeqkhurram007.com",
+      "url": "https://aneeqkhurram007.com"
+    }
+  ]
 }

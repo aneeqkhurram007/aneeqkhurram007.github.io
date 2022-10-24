@@ -4,6 +4,7 @@ import { Project } from "../typings";
 import { urlFor } from "../sanity";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 type Props = {
   projects: Project[];
@@ -53,7 +54,9 @@ function Projects({ projects }: Props) {
 
               <div className="flex items-center space-x-2 justify-center">
                 {project.technologies.map((technology) => (
-                  <img
+                  <Image
+                    width={40}
+                    height={40}
                     className="h-10 w-10"
                     key={technology._id}
                     src={urlFor(technology?.image).url()}
