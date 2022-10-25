@@ -2,15 +2,6 @@ export default {
     title: "Aneeq Khurram",
     description: "Aneeq Khurram's web development portfolio. Aneeq Khurram is a professional React developer having experience of more than 2 years in React, Next, Tailwind CSS, MERN stack, GraphQL, Material UI, and Firebase",
     canonical: "https://aneeqkhurram007.com/",
-    robotsProps: {
-        nosnippet: true,
-        notranslate: true,
-        noimageindex: true,
-        noarchive: true,
-        maxSnippet: -1,
-        maxImagePreview: 'none',
-        maxVideoPreview: -1,
-    },
     twitter: {
         cardType: "summary_large_image",
         site: "@aneeqkhurram007",
