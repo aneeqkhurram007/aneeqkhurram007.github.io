@@ -18,15 +18,15 @@ function Skills({ skills }: Props) {
     xl:space-y-0 xl:space-x-5 mx-auto items-center"
     >
       <div>
-        <h3
+        <p
           className="uppercase tracking-[20px]
       text-gray-500 text-2xl"
         >
           Skills
-        </h3>
-        <h3 className="uppercase tracking-[3px] text-gray-500 text-sm">
+        </p>
+        <p className="uppercase tracking-[3px] text-gray-500 text-sm">
           Hover over a skill for current proficiency
-        </h3>
+        </p>
       </div>
       <div className="grid grid-cols-4 gap-5">
         {skills?.slice(0, skills.length / 2)?.map((skill) => (

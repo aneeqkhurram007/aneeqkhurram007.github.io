@@ -16,12 +16,12 @@ function Experience({ experiences }: Props) {
       className="min-h-screen flex relative overflow-hidden flex-col text-left
     xl:flex-row max-w-full xl:px-20 justify-evenly xl:justify-between mx-auto items-center"
     >
-      <h3
+      <p
         className=" uppercase tracking-[20px]
       text-gray-500 text-2xl"
       >
         Experience
-      </h3>
+      </p>
       <div
         className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory
       scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"

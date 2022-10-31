@@ -62,6 +62,7 @@ function Header({ socials }: Props) {
             network="email"
             fgColor="#f7ab0a"
             bgColor="transparent"
+            url="https://aneeqkhurram007.com"
           />
           <p className="uppercase hidden md:inline-flex text-sm text-[#f7ab0a]">
             Get in touch

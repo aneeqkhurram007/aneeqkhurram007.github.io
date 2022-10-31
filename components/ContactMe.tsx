@@ -26,12 +26,12 @@ const ContactMe = (props: Props) => {
       className="min-h-screen flex relative flex-col text-center md:text-left xl:flex-row
     max-w-7xl px-10 justify-center sm:justify-evenly xl:justify-between mx-auto items-center space-y-10"
     >
-      <h3
+      <p
         className="uppercase tracking-[20px]
       text-gray-500 text-2xl"
       >
         Contact
-      </h3>
+      </p>
       <div className="flex px-4 flex-col space-y-4 sm:space-y-5">
         <h4 className="text-2xl sm:text-4xl font-semibold text-center">
           I have got just what you need.{" "}

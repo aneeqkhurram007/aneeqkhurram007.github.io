@@ -19,12 +19,12 @@ function Projects({ projects }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
-      <h3
+      <p
         className=" uppercase tracking-[20px]
       text-gray-500 text-2xl"
       >
         Projects
-      </h3>
+      </p>
       <div
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory
         z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#f7ab0a]/80"

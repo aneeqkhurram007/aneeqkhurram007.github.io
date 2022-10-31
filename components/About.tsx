@@ -18,12 +18,12 @@ function About({ pageInfo }: Props) {
   flex-col text-center md:text-left xl:flex-row max-w-7xl
   mx-auto px-10 justify-center sm:justify-evenly  items-center"
     >
-      <h3
+      <p
         className="uppercase tracking-[20px]
       text-gray-500 text-2xl"
       >
         About
-      </h3>
+      </p>
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
