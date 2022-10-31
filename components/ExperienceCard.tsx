@@ -15,7 +15,7 @@ function ExperienceCard({ experience }: Props) {
     w-[500px] md:w-[600px] xl:w-[900px] cursor-pointer hover:opacity-100 opacity-40
     transition-opacity duration-200 overflow-hidden"
     >
-      <motion.img
+      <motion.div
         className="w-32 h-32 object-center rounded-full xl:w-[200px] xl:h-[200px] object-cover"
         viewport={{ once: true }}
         initial={{
@@ -24,9 +24,16 @@ function ExperienceCard({ experience }: Props) {
         }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
-        src={urlFor(experience?.companyImage).url()}
-        alt="card"
-      />
+      >
+        <Image
+          width={500}
+          height={500}
+          className="rounded-full"
+          objectFit="cover"
+          src={urlFor(experience?.companyImage).url()}
+          alt={experience.company}
+        />
+      </motion.div>
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">{experience.company}</h4>
         <p className="font-bold text-2xl mt-1">{experience.jobTitle}</p>
