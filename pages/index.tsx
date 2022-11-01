@@ -35,7 +35,7 @@ const Home = ({ pageInfo, projects, socials, experiences, skills }: Props) => {
   return (
     <>
       <Head>
-        <title>Aneeq Khurram</title>
+        <title>Aneeq Khurram | React, Next and Web Development Portfolio</title>
       </Head>
       <div
         className="bg-main snap-y snap-mandatory overflow-y-scroll overflow-x-hidden
