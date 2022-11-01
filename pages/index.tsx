@@ -1,6 +1,7 @@
 import type { GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
 import Experience from "../components/Experience";
@@ -33,6 +34,9 @@ type Props = {
 const Home = ({ pageInfo, projects, socials, experiences, skills }: Props) => {
   return (
     <>
+      <Head>
+        <title>Aneeq Khurram</title>
+      </Head>
       <div
         className="bg-main snap-y snap-mandatory overflow-y-scroll overflow-x-hidden
     z-0 text-white h-screen scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"
