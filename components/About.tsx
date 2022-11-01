@@ -42,11 +42,11 @@ lg:rounded-lg md:w-64 xl:w-[500px] xl:h-[600px] "
         />
       </motion.div>
       <div className=" px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
+        <p className="text-4xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#f7ab0a]">little</span>{" "}
           background
-        </h4>
+        </p>
         <p className="text-base">{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>
