@@ -9,7 +9,7 @@ type Props = {
   skill: Skill;
 };
 
-function Skill({ direction, skill }: Props) {
+function SkillComponent({ direction, skill }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.div
@@ -46,4 +46,4 @@ function Skill({ direction, skill }: Props) {
   );
 }
 
-export default Skill;
+export default SkillComponent;
