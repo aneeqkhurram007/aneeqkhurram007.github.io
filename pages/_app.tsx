@@ -42,15 +42,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             href: "http://localhost:3000/favicon.ico",
           },
         ]}
-        robotsProps={{
-          nosnippet: true,
-          notranslate: true,
-          noimageindex: true,
-          noarchive: true,
-          maxSnippet: -1,
-          maxImagePreview: "none",
-          maxVideoPreview: -1,
-        }}
       />
       <Component {...pageProps} />
     </>
