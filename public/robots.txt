@@ -1,2 +1,3 @@
 User-Agent: *
 Allow: /
+Sitemap: https://www.aneeqkhurram007.com/sitemap.xml
