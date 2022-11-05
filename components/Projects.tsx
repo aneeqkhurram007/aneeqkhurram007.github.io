@@ -43,6 +43,9 @@ function Projects({ projects }: Props) {
               className="h-64"
             >
               <Image
+                priority
+                placeholder="blur"
+                blurDataURL={urlFor(project?.image).url()}
                 width={500}
                 height={250}
                 objectFit="cover"
@@ -61,6 +64,9 @@ function Projects({ projects }: Props) {
               <div className="flex items-center space-x-2 justify-center">
                 {project.technologies.map((technology) => (
                   <Image
+                    priority
+                    placeholder="blur"
+                    blurDataURL={urlFor(technology?.image).url()}
                     width={40}
                     height={40}
                     className="h-10 w-10"

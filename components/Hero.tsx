@@ -28,6 +28,9 @@ function Hero({ pageInfo }: Props) {
     >
       <BackgroundCircles />
       <Image
+        priority
+        placeholder="blur"
+        blurDataURL={urlFor(pageInfo?.heroImage).url()}
         src={urlFor(pageInfo?.heroImage).url()}
         width={128}
         height={128}

@@ -70,6 +70,9 @@ const Home = ({ pageInfo, projects, socials, experiences, skills }: Props) => {
           <footer className="sticky bottom-5 w-full cursor-pointer">
             <div className="flex items-center justify-center">
               <Image
+                priority
+                placeholder="blur"
+                blurDataURL={urlFor(pageInfo?.heroImage).url()}
                 height={40}
                 width={40}
                 src={urlFor(pageInfo.heroImage)?.url()}

@@ -26,6 +26,9 @@ function ExperienceCard({ experience }: Props) {
         whileInView={{ opacity: 1, y: 0 }}
       >
         <Image
+          priority
+          placeholder="blur"
+          blurDataURL={urlFor(experience?.companyImage).url()}
           width={500}
           height={500}
           className="rounded-full"
@@ -40,6 +43,9 @@ function ExperienceCard({ experience }: Props) {
         <div className="flex space-x-2 my-2">
           {experience.technologies?.map((technology) => (
             <Image
+              priority
+              placeholder="blur"
+              blurDataURL={urlFor(technology?.image).url()}
               width={40}
               height={40}
               key={technology._id}

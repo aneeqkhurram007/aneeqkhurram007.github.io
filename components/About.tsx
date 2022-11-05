@@ -34,6 +34,9 @@ lg:rounded-lg md:w-64 xl:w-[500px] xl:h-[600px] "
       >
         <Image
           src={urlFor(pageInfo?.profilePic).url()}
+          priority
+          placeholder="blur"
+          blurDataURL={urlFor(pageInfo?.profilePic).url()}
           alt="Profile"
           objectFit="cover"
           width={1000}

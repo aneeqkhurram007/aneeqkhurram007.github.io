@@ -23,6 +23,9 @@ function SkillComponent({ direction, skill }: Props) {
     xl:h-32 filter group-hover:grayscale md:h-28 md:w-28 transition duration-300 ease-in-out"
       >
         <Image
+          priority
+          placeholder="blur"
+          blurDataURL={urlFor(skill?.image).url()}
           src={urlFor(skill.image).url()}
           alt={skill.title}
           objectFit="fill"
