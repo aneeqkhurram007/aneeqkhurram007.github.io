@@ -54,7 +54,7 @@
     "url": "https://aneeqkhurram007.com"
   },
   "homepage": "index.html",
-  "packageManager": "yarn, yarnpkg",
+  "packageManager": "yarn",
   "publisher": "Aneeq Khurram",
   "license": "MIT",
   "dependencies": {
