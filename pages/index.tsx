@@ -36,6 +36,7 @@ const Home = ({ pageInfo, projects, socials, experiences, skills }: Props) => {
     <>
       <Head>
         <title>Aneeq Khurram | React, Next and Web Development Portfolio</title>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
       </Head>
       <div
         className="bg-main snap-y snap-mandatory overflow-y-scroll overflow-x-hidden
