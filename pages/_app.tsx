@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         additionalLinkTags={[
           {
             rel: "icon",
-            href: "http://localhost:3000/favicon.ico",
+            href: "./favicon.ico",
           },
         ]}
       />
