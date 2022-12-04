@@ -8,7 +8,7 @@ const SeoHead = () => {
       <DefaultSeo
         title="Aneeq Khurram | React, Next and Web Development Portfolio"
         description="Aneeq Khurram is a professional React developer having experience in React, Next, Tailwind CSS, MERN stack, GraphQL, Material UI, and Firebase"
-        canonical="https://aneeqkhurram007.com/"
+        canonical="https://www.aneeqkhurram007.com/"
         twitter={{
           cardType: "summary_large_image",
           site: "@aneeqkhurram007",
