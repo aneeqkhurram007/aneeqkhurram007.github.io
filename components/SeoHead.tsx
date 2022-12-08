@@ -29,7 +29,7 @@ const SeoHead = () => {
           },
           images: [
             {
-              url: "https://cdn.sanity.io/images/2cscjtea/production/0299029aaf5877b26fa69d7cb211fee0a56918cd-1080x1350.png",
+              url: "https://cdn.sanity.io/images/2cscjtea/production/a41c5e5a3a95623b7d61d9501f19b7f471f16b48-1080x1080.png",
               width: 500,
               height: 600,
               alt: "Aneeq Khurram hero image",
