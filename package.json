@@ -10,7 +10,7 @@
     "sanity": "cd sanity && yarn start"
   },
   "author": {
-    "email": "admin@aneeqkhurram007.com",
+    "email": "work.aneeq.khurram@gmail.com",
     "name": "Aneeq Khurram",
     "url": "https://aneeqkhurram007.com"
   },
@@ -32,7 +32,7 @@
     },
     {
       "name": "Aneeq Khurram",
-      "email": "admin@aneeqkhurram007.com",
+      "email": "work.aneeq.khurram@gmail.com",
       "url": "https://aneeqkhurram007.com"
     }
   ],
@@ -90,7 +90,7 @@
   "maintainers": [
     {
       "name": "Aneeq Khurram",
-      "email": "admin@aneeqkhurram007.com",
+      "email": "work.aneeq.khurram@gmail.com",
       "url": "https://aneeqkhurram007.com"
     }
   ]

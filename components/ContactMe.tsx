@@ -18,7 +18,7 @@ const ContactMe = (props: Props) => {
     formState: { errors },
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:admin@aneeqkhurram007.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}, ${formData.message} (${formData.email})`;
+    window.location.href = `mailto:work.aneeq.khurram@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}, ${formData.message} (${formData.email})`;
   };
 
   return (
@@ -41,15 +41,11 @@ const ContactMe = (props: Props) => {
         <div className="space-y-4 sm:space-y-5">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <p className="text-lg sm:text-2xl">+92-306-4730660</p>
+            <p className="text-lg sm:text-2xl">+1-307-3102667</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <p className="text-lg sm:text-2xl">admin@aneeqkhurram007.com</p>
-          </div>
-          <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <p className="text-lg sm:text-2xl">Lahore, Pakistan</p>
+            <p className="text-lg sm:text-2xl">work.aneeq.khurram@gmail.com</p>
           </div>
         </div>
 
